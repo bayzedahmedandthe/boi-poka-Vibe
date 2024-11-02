@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="navbar bg-base-100 mt-10">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="btn lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -25,7 +25,7 @@ const Navbar = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <button className="hover:bg-base-200 px-4 py-2 rounded-xl"><NavLink to = "/">Home</NavLink></button>
                         <li>
-                            <a href="">Listed Books</a>
+                            <NavLink to="/listedBooks">Listed Books</NavLink>
                         </li>
                         <li><a>Pages to read</a></li>
                     </ul>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-1 lg:items-center lg:flex">
                    <button className="hover:bg-base-200 px-4 py-2 rounded-xl"><NavLink to = "/">Home</NavLink></button>
                     <li>
-                    <a href="">Listed Books</a>
+                    <NavLink to="/listedBooks">Listed Books</NavLink>
                     </li>
                     <li><a>Pages to read</a></li>
                 </ul>

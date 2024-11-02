@@ -3,7 +3,7 @@ import Book from "../Book/Book";
 
 
 
-const Books = ({booksData}) => {
+const Books = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
