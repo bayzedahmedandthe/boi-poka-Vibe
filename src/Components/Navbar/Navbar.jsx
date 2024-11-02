@@ -1,4 +1,5 @@
-import Header from "../Header/Header";
+import { NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
     return (
@@ -22,7 +23,7 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
+                        <li><NavLink to = "/">Home</NavLink></li>
                         <li>
                             <a href="">Listed Books</a>
                         </li>
@@ -41,8 +42,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-4">
+                <button>
                 <a className="text-white font-semibold px-6 py-3 bg-[#23BE0A] rounded-lg">Sing In</a>
+                </button>
+                <button>
                 <a className="text-white font-semibold px-6 py-3 bg-[#59C6D2] rounded-lg">Sing up</a>
+                </button>
             </div>
         </div>
        
