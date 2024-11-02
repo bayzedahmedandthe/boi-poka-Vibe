@@ -23,7 +23,7 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><NavLink to = "/">Home</NavLink></li>
+                        <button className="hover:bg-base-200 px-4 py-2 rounded-xl"><NavLink to = "/">Home</NavLink></button>
                         <li>
                             <a href="">Listed Books</a>
                         </li>
@@ -32,9 +32,9 @@ const Navbar = () => {
                 </div>
                 <a className="btn btn-ghost  font-bold text-[28px]">Book Vibe</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+            <div className="navbar-center hidden lg:flex items-center">
+                <ul className="menu menu-horizontal px-1 lg:items-center lg:flex">
+                   <button className="hover:bg-base-200 px-4 py-2 rounded-xl"><NavLink to = "/">Home</NavLink></button>
                     <li>
                     <a href="">Listed Books</a>
                     </li>

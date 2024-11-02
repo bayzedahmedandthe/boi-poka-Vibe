@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Book from "../Book/Book";
 
 
-const Books = () => {
+
+const Books = ({booksData}) => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
@@ -10,6 +11,7 @@ const Books = () => {
         .then(res => res.json())
         .then(data => setBooks(data))
     }, []);
+
 
     return (
         <div className="pt-24">
